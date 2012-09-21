@@ -6,10 +6,14 @@ group: navigation
 ---
 {% include JB/setup %}
 
+----------------------------
 
 `Cydu` 是我最常用的昵称，其实就是我的名字拼音ChuanYingDU的简称. 
 
 另一个常用昵称`hustdcy`: Huazhong University of Science & Technology DuChuanYing. 
+
+![cydu](/img/cydu_small.jpg)
+
 
 ## 简介
 
