@@ -4,7 +4,7 @@
  <title>Cydu's Blog</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2012-09-22T02:09:41+08:00</updated>
+ <updated>2012-09-22T02:18:08+08:00</updated>
  <id></id>
  <author>
    <name>杜传赢 ChuanyingDu</name>
@@ -25,7 +25,7 @@
    <link href="/2012/09/weibo-counter-service-design-2.html"/>
    <updated>2012-09-09T00:00:00+08:00</updated>
    <id>/2012/09/weibo-counter-service-design-2</id>
-   <content type="html">&lt;h2 id='id103'&gt;更新&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id1'&gt;更新&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;/p&gt;
 
@@ -51,7 +51,7 @@
 &lt;li&gt;更新Redis方案下内存使用的估算, 感谢 &lt;a href='http://weibo.com/n/刘浩bupt'&gt;@刘浩bupt&lt;/a&gt; 的提醒。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id='id104'&gt;背景&lt;/h2&gt;
+&lt;h2 id='id2'&gt;背景&lt;/h2&gt;
 
 &lt;p&gt;上周挖了一个坑 &lt;a href='http://qing.weibo.com/1639780001/61bd0ea133002460.html'&gt;微架构设计 微博计数器的设计(上)&lt;/a&gt;.&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 
 &lt;p&gt;这个不用多说了吧，足够的简单暴力。 但是在产品发展的初期快速迭代的阶段，他能够解决很多的问题，也不失为一个不错的解决方案。&lt;/p&gt;
 
-&lt;h4 id='id105'&gt;数据量过大怎么办?&lt;/h4&gt;
+&lt;h4 id='id3'&gt;数据量过大怎么办?&lt;/h4&gt;
 
 &lt;p&gt;对于一亿甚至几亿以下的数据规模来说，拆表能够解决很多问题，对于微博计数器来说至少有两种经典的拆法:&lt;/p&gt;
 
@@ -79,7 +79,7 @@
 
 &lt;p&gt;数据量从亿上升到千亿后，这个问题的本质就发生了变化，维护上千张表，热点还各不相同需要经常切换调整，这是一件非常悲剧的事情。。。&lt;/p&gt;
 
-&lt;h4 id='id106'&gt;访问量太大怎么办?&lt;/h4&gt;
+&lt;h4 id='id4'&gt;访问量太大怎么办?&lt;/h4&gt;
 
 &lt;p&gt;应对访问量，也有很多的经典的方法:&lt;/p&gt;
 
