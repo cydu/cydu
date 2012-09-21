@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cydu &raquo; [微架构设计]微博计数器的设计(上)</title>
+    <meta name="description" content="">
+    <meta name="author" content="杜传赢 ChuanyingDu">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/master.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/vibrant_ink.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Cydu's Blog</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/atom.xml">Atom Feed</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+    <h1><a href="/2012/08/weibo-counter-service-design-1.html">[微架构设计]微博计数器的设计(上)</a></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+      <p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。</p>
+
+<p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！</p>
+<hr />
+<p>闲话少说，上点干货.</p>
+
+<p><strong>背景:</strong></p>
+
+<pre><code>每一条微博的转发和评论背后都是一串串说不完的故事，但是今天主要讲的是 **计数服务**，计数服务详尽地记录着每条微博 被评论的次数 和 被转发的次数，当然也还有更多的喜怒哀乐都记录于此。 </code></pre>
+
+<p><strong>数据量:</strong></p>
+
+<pre><code>微博总数量:  
+
+    千亿级 而且每秒都在飞速增长中。每条微博都有一个64位的唯一id。
+
+访问量:  
+
+    每秒百万级 还在稳步增长中。  根据微博的id来访问。</code></pre>
+
+<p><strong>主要接口:</strong></p>
+
+<pre><code>增加评论数 (默认为0)
+
+增加转发数 (默认为0)
+
+获取评论数
+
+获取转发数
+
+获取评论数 + 获取转发数  (这个接口访问量最大)
+
+评论数和转发数，你都可以认为是 32位的整形数值。不会是负数，默认是0。</code></pre>
+
+<p><strong>要求:</strong></p>
+
+<pre><code>由于用户对于数字非常的敏感(想想你好不容易拉到一位粉丝，但是粉丝数没涨的痛苦吧。)，所以我们要求数据非常准确，延迟极低(1s以内)，服务稳定性极高(千万别因为某大妈扫个地拨了插座就把数字弄没了...) </code></pre>
+<hr />
+<p>做为架构师，当然也需要全方位地考虑架构成本问题，然后去做各种的折衷。 这里主要考虑的成本是: 机器成本，开发成本，维护成本。</p>
+<hr />
+<p>有兴趣的架构师和准架构师们可以一起思考，怎样才能用最少的机器，最短时间内开发出最易维护的计数器系统。。。当然，得满足我们数据量，性能和高可用的要求。</p>
+
+<p>对这一块非常的感兴趣，而且有靠谱的想法和建议，烦请私信简历给 <a href='http://www.weibo.com/n/cydu'>@cydu</a> 或者 <a href='http://weibo.com/n/微博平台架构'>@微博平台架构</a>，我们这里还有大量类似的问题期待着你来解决！ 当然，也可以直接评论一起讨论。</p>
+
+<p><strong>PS:</strong></p>
+
+<pre><code>后面我会给出我们的理解和解决的思路，期待大家一起来优化。</code></pre>
+    
+    <div class="pagination">
+        <ul class="pager">
+            
+            <li class="previous">
+            <a href="/2012/07/say-goodbye-to-baidu.html">&laquo; 那些年我们一起写代码--杜传赢和各位说再见</a>
+            </li>
+            
+            
+            <li class="next">
+            <a href="/2012/09/weibo-counter-service-design-2.html">[微架构设计]微博计数器的设计(下) &raquo;</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="well_license">  
+  <a rel="license" href="http://creativecommons.org/licenses/by/2.5/cn/">
+    <img alt="Creative Commons License" style="float:left;margin:0 4px 0 0;" src="http://i.creativecommons.org/l/by/2.5/cn/80x15.png" />
+  </a>
+  <a href="/2012/08/weibo-counter-service-design-1.html">本文</a>基于<a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by/2.5/cn/">署名 2.5 中国大陆</a>许可协议发布，欢迎转载，演绎或用于商业目的，但是必须保留本文的署名<a href="http://blog.cydu.net/about.html">杜传赢 ChuanyingDu</a>（包含本文链接）。如您有任何疑问或者授权方面的协商，请<a target="_blank" href="mailto:hustdcy@gmail.com">联系我</a>。
+
+
+
+</div>
+    <hr>
+    
+    <script type="text/javascript">
+        (function(){
+         var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=auto&border=1&brandline=y&fontsize=14&ralateuid=1639780001&appkey=2210322454&dpc=1";
+         url = url.replace("url=auto", "url=" + document.URL); 
+         document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+         })();
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    window.WBComment.init({
+            "id": "WBCommentFrame"
+            });
+</script>
+  </div>
+
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>30 August 2012</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="#计数器-ref">计数器 <span>2</span></a></li>
+     
+    	<li><a href="#微架构设计-ref">微架构设计 <span>2</span></a></li>
+     
+    	<li><a href="#微博平台架构-ref">微博平台架构 <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Cydu 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
