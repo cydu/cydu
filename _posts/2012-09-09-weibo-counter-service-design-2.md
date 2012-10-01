@@ -7,8 +7,6 @@ tags: 计数器 微架构设计 微博平台架构
 ---
 {% include JB/setup %}
 
-{:toc}
-
 ## 更新
 
     
