@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cydu's Blog</title>
+    <link>http://blog.cydu.net/</link>
+    <atom:link href="http://blog.cydu.net/rss.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <language>en-us</language>
+    <pubDate>Tue, 02 Oct 2012 02:05:06 +0800</pubDate>
+    <lastBuildDate>Tue, 02 Oct 2012 02:05:06 +0800</lastBuildDate>
+
+    
+      <item>
+        <title>[微扯蛋]工程师的cy分类法及价值观输出的重要性</title>
+        <link>http://blog.cydu.net//2012/09/cy_values_classified.html</link>
+        <pubDate>Sat, 29 Sep 2012 00:00:00 +0800</pubDate>
+        <author>杜传赢 ChuanyingDu</author>
+        <guid>http://blog.cydu.net//2012/09/cy_values_classified</guid>
+        <description>&lt;h2&gt;背景&lt;/h2&gt;
+
+&lt;p&gt; @微博平台架构 今天搞了一个平台开放日假前的号外活动，类似于
+ TED的自由主题演讲，大家都就自己感兴趣的话题做15-30分钟的演讲。&lt;/p&gt;
+
+&lt;p&gt;我临时凑热闹上去玩了玩，玩得非常开心! 平台开放日的其他几个主题
+演讲也都非常精彩，收益良多，后面一定要多搞这种活动！&lt;/p&gt;
+
+&lt;!-- more start --&gt;
+
+
+&lt;h2&gt;动机&lt;/h2&gt;
+
+&lt;p&gt;由于是临近放假的活动，所以选题时，我故意没选太过枯燥的技术
+话题，而是讲一个稍微轻松点的话题; 但是我的想法还是:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;既然耽误了大家如此宝贵的休息时间，那就还是希望大家能够从中有一点小的收获。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;于是临时YY出了 &lt;code&gt;cy分类法&lt;/code&gt; 这么个东东.&lt;/p&gt;
+
+&lt;h2&gt;程序员 VS 工程师&lt;/h2&gt;
+
+&lt;p&gt;我所理解的程序员就是只管写代码，功能实现的低级码农!&lt;/p&gt;
+
+&lt;p&gt;而工程师是解决问题的人, 工程师的目标是解决问题，而不是写代码，
+虽然有的时候确实是通过写代码来解决问题。&lt;/p&gt;
+
+&lt;p&gt;程序员一般只问:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;下周要做啥？ =&amp;gt;  What? 
+
+怎么做啊？  =&amp;gt;   How? 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;而工程师一般问:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;为什么要做这个?  =&amp;gt;     Why? 
+
+谁说这个做不了啊?  =&amp;gt;   Why Not? 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;工程师的价值如何评估?&lt;/h2&gt;
+
+&lt;p&gt;低级的程序员你可以用他完成的代码数，功能数来评估(其实也是非常不科学的)。&lt;/p&gt;
+
+&lt;p&gt;但是工程师的价值更加的难以评估，就像:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;用一杆称白菜的小称来称大飞机的重量以确定这架飞机的价值!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;PS: 现场有坏人说学曹冲称象，把大飞机拆碎了称。。。&lt;/p&gt;
+
+&lt;h2&gt;工程师的工作产出什么？&lt;/h2&gt;
+
+&lt;p&gt;要评价其价值,先看他的产出，一切以结果为导向。&lt;/p&gt;
+
+&lt;h3&gt;价值观&lt;/h3&gt;
+
+&lt;p&gt;价值观是什么？百度百科的解释是:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;价值观是指一个人对周围的客观事物（包括人、事、物）的意义、重要性的总评价和总看法。一方面表现为价值取向、价值追求，凝结为一定的价值目标；另一方面表现为价值尺度和准则，成为人们判断价值事物有无价值及价值大小的评价标准。个人的价值观一旦确立，便具有相对稳定性。但就社会和群体而言 ，由于人员更替和环境的变化，社会或群体的价值观念又是不断变化着的。传统价值观念会不断地受到新价值观的挑战。对诸事物的看法和评价在心目中的主次、轻重的排列次序，构成了价值观体系。价值观和价值观体系是决定人的行为的心理基础。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其实也就是 程序员对自己以往经验，智力的一个总结和升化，而形成的系统
+性，持久性的观点，评价和看法。当然也包括，一贯的，原则上的支持XX，反对XX;
+喜欢XX，讨厌XX。。。&lt;/p&gt;
+
+&lt;!-- more end --&gt;
+
+
+
+</description>
+      </item>
+    
+      <item>
+        <title>[微架构设计]微博计数器的设计(下)</title>
+        <link>http://blog.cydu.net//2012/09/weibo-counter-service-design-2.html</link>
+        <pubDate>Sun, 09 Sep 2012 00:00:00 +0800</pubDate>
+        <author>杜传赢 ChuanyingDu</author>
+        <guid>http://blog.cydu.net//2012/09/weibo-counter-service-design-2</guid>
+        <description>&lt;h2&gt;更新&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 更新了数据持久化和一致性保证相关的内容，多谢 &lt;a href=&quot;http://weibo.com/n/lihan_harry&quot;&gt;@lihan_harry&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/%E9%83%91%E7%8E%AFZheng&quot;&gt;@郑环Zheng&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/51%E5%88%98%E8%BE%BE&quot;&gt;@51刘达&lt;/a&gt; 等同学的提醒。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 更新了 对于weibo_id key的优化，使用前缀压缩，可以节省近一半的空间。 感谢 &lt;a href=&quot;http://weibo.com/n/%E5%90%B4%E5%BB%B7%E5%BD%AC&quot;&gt;@吴廷彬&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/drdrxp&quot;&gt;@drdrxp&lt;/a&gt; 的建议！&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update3:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 更新了 对于value 使用二维数组，多列进行压缩编码的优化思路， 再次感谢 &lt;a href=&quot;http://weibo.com/n/%E5%90%B4%E5%BB%B7%E5%BD%AC&quot;&gt;@吴廷彬&lt;/a&gt; 的建议，&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update4:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 更新Redis方案下内存使用的估算, 感谢 &lt;a href=&quot;http://weibo.com/n/%E5%88%98%E6%B5%A9bupt&quot;&gt;@刘浩bupt&lt;/a&gt; 的提醒。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;上周挖了一个坑 &lt;a href=&quot;http://qing.weibo.com/1639780001/61bd0ea133002460.html&quot;&gt;微架构设计 微博计数器的设计(上)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;虽然挖这个坑的动机是很不纯的(很明显的招聘软文, 非常欣慰的是确实收到了不少靠谱的简历, 希望简历来得更猛烈一些! ), 但是和大家讨论的过程中，还是收获很大的, 也认识了不少新朋友。&lt;/p&gt;
+
+&lt;!-- more start --&gt;
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;对于一个简单的计数服务来说，确实非常的简单，我们可以有很多的解决方案:&lt;/p&gt;
+
+&lt;h3&gt;方案一  &lt;code&gt;直接上mysql&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;这个不用多说了吧，足够的简单暴力。 但是在产品发展的初期快速迭代的阶段，他能够解决很多的问题，也不失为一个不错的解决方案。&lt;/p&gt;
+
+&lt;h4&gt;数据量过大怎么办?&lt;/h4&gt;
+
+&lt;p&gt;对于一亿甚至几亿以下的数据规模来说，拆表能够解决很多问题，对于微博计数器来说至少有两种经典的拆法:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;按id取模，把数据拆分到N个表当中去。 这个方案的悲剧是: 扩展性不好，不好加表，数据一旦满了，加起来很郁闷。虽然可以预先多分一些表，但是对于weibo这种快速增长的业务来说，严重影响了业务的快速增长需求。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;按id的时间来分段拆表，满了就建新表。 这个方案的悲剧是: 冷热不均，最近的weibo肯定是被访问最频繁的，而老的库又基本没有访问。 可以通过冷热库混合部署的方案来缓解，但是部署和维护的成本非常大。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;数据量从亿上升到千亿后，这个问题的本质就发生了变化，维护上千张表，热点还各不相同需要经常切换调整，这是一件非常悲剧的事情。。。&lt;/p&gt;
+
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;h4&gt;访问量太大怎么办?&lt;/h4&gt;
+
+&lt;p&gt;应对访问量，也有很多的经典的方法:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;上Cache(Eg: Memcache), 访问时先访问Cache，不命中时再访问mysql. 这样做有两个郁闷点: 空数据也得Cache(有一半以上的微博是没有转发也没有评论的，但是依然有大量的访问会查询他); Cache频繁失效(由于计数更新非常快，所以经常需要失效Cache再重种，还会导致数据不一致);做为最基础的服务，使用复杂，客户端需要关注的东西更多&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更好的硬件解决。 上FusionIO + HandleSocket + 大内存 优化.  通过硬件的方式也能够解决问题，但是这是最典型的Scale up的方案。虽然完全不用开发，但是硬件成本不低，且对于更复杂的需求，以及流量快速的增长，也很难应对。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;优点&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;不用开发, 码农们可以用写代码的时间出去泡泡妞。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;方案成熟, 数据复制，管理，修复方案都很成熟。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;缺点&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;对大数据量和高并发访问支持不好，非常的力不从心。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;维护成本和硬件成本都很高。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;总的来说&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mysql分表 + Cache/硬件 加速的方案 对于数据规模和访问量不是特别巨大的情况下，非常不错的解决方案，但是量大了之后非常不合事宜.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;既然 Mysql不行，那用NoSQL 呢？&lt;/p&gt;
+
+&lt;h3&gt;方案二: &lt;code&gt;Redis&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;做为一个简单的内存数据结构来说，Redis提供非常简单易用的访问接口，而且有相当不错的单机性能。 通过incr实现的 Counter Pattern，用来做计数器服务，更是简单轻松。 通过上层的分表，增加slave等方式，堆一些机器，也能够解决大数据量和高并发访问的问题。&lt;/p&gt;
+
+&lt;p&gt;但是Redis是纯内存的(vm机制不成熟而且即将被废弃,我们线上肯定是不敢直接使用的！)，所以成本也不算低，我们简单的来估算一下数据存储量(下面都是按照Redis 2.4.16的实现，在64位系统，指针为8字节来估算的) :&lt;/p&gt;
+
+&lt;p&gt;假设 key 为8字节，value为 4字节，通过incr存储的话:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;一个 value 通过 createStringObjectFromLongLong 创建一个robj，由于value在LONG_MIN 和LONG_MAX 之间，所以可以将value用 ptr指针来存储，需要占用 sizeof(robj) = 16 字节;
+
+一个key(即微博id) 最长64位数字(Eg: 5612814510546515491)，但通过 sdsdup 以字符串的形式存储，至少需要 8(struct sdshdr)+19+1 = 28字节;
+
+为了存到Redis 的dict里面，需要一个dictEntry对象，继续 3*8 = 24字节; 
+
+放到db-&amp;gt;dict-&amp;gt;ht[0]-&amp;gt;table中存储dictEntry的指针，再要 8个字节;
+
+
+存储一个64位key，32位value的计数，Redis也至少需要耗费: 16 + 28 + 24 + 8 = 76 字节。 
+
+1000亿个key全内存的话，就至少需要 100G * 76 = 7.6TB的内存了(折算76G内存机器也需要100台！)。  
+
+
+我们的有效数据其实是 1000亿*32位 = 400GB，但是却需要7.6TB来存储，内存的有效利用率约为:  400GB/7600GB  = 5.3%. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;即使这样，对于很多热点的数据，只有一个副本，单机性能不够，系统的稳定性也无法保证(单机Down掉咋办？)， 还需要复制多份。 再算上为了避免内存碎片引入的jemalloc的内存开销; 再算了dictExpand等需要的临时内存空间; 再算上系统要用的内存开销。。。那要的机器就更多了，保守估计需要300-400台以上的机器。&lt;/p&gt;
+
+&lt;p&gt;总的来说:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Redis做为优秀的内存数据结构，接口方便，使用简单，对于小型数据量的中高访问量的计数类服务来说，是一个很不错的选择，但是对于微博计数器这种极端的应用场景，成本还是无法接受！ 
+
+
+还有一些同学提出了用 Cassandra，MongoDB 等其他NoSQL的方案，无论是从可维护性的角度，还是从机器利用率的角度，都很难以接受(有兴趣的同学可以仔细分析一下)。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;普通的NoSQL也不行，那怎么办？ 尝试定制我们自己的Counter！&lt;/p&gt;
+
+&lt;p&gt;=======================&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Update4:
+
+@刘浩bupt: @cydu 刚刚仔细阅读了文中redis容量预估的部分，有两点小瑕疵：1.对于value的存储，文中估算了16个字节，其实这部分开销是可以节省的。createStringObjectFromLongLong函数，对于小于REDIS_SHARED_INTEGERS的value值，不会额外分配空间。REDIS_SHARED_INTEGERS默认是10000，调大一些可以满足大部分需求
+
+@刘浩bupt: @cydu 2.是可以评估下使用zipmap达到的内存利用率。redis不是只有string-&amp;gt;string的kv存储，还是有一些可以挖掘的东西的。instagram在其工程博客中介绍过（http://t.cn/S7EUKe），改用zipmap后，其存储1M的数据，内存占用由70M优化到了16M。鉴于新浪微博大量的使用redis，定制redis实现服务也是个思路。
+
+感谢 @刘浩bupt 同学帮我指出对于Redis容量预估的不准确，通过Redis自带的 REDIS_SHARED_INTEGERS 机制确实可能大量节省value所占的内存，但是由于这个方案需要依赖存储shared_int的指针，不太好迁移到方案三里面去。 
+
+Zipmap这个优化的思路是相当不错的，对于通用的Redis的使用，我们会持续关注。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;方案三: &lt;code&gt;Counter&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;计数器是一个普通的基础服务，但是因为数据量太大了，从而量变引发了质变。 所以我们做Counter时的一个思路就是: 牺牲部分的通用性，针对微博转发和评论的大数据量和高并发访问的特点来进行定点优化。&lt;/p&gt;
+
+&lt;h4&gt;1. 大量微博(一半以上)是没有转发，或者没有评论，甚至是没有转发也没有评论。&lt;/h4&gt;
+
+&lt;p&gt;针对这种情况的优化:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;抛弃 存储+Cache的思路,  因为这些为0的数据，也必须进到Cache中(无论是旁路还是穿透)，因为查询量并不小，这对于我们Cache的利用率影响非常非常的大(有一半的数据是空的。)  而我们采用类似 存储即Cache(存储本身就在内存中) 时，这一类的数据是可以不存储的，当查不到的时候，就返回0。   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通过这种情况:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1000亿个数字，我们可以减少3/5，即最多只需要存 400亿个数字。这算是最经典的稀疏数组的优化存储方式了。  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;2.  微博的评论数和转发数 的关联度非常的高。&lt;/h4&gt;
+
+&lt;p&gt;他们都有相同的主Key, 有大量转发的微博一般也有评论，有大量评论的一般转发量也不小。 而且访问量最大的Feed页基本上取评论数的时候，也会取转发数。。。&lt;/p&gt;
+
+&lt;p&gt;针对这种情况的优化:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我们将评论数和转发数 可以考虑存储在一起，这样的话，可以节省大量key的存储空间。 由 微博ID+评论数; 微博ID+转发数 变为: 微博ID+评论数+转发数的结构。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这个优化和上一个优化是有一些小冲突的，部分有转发没有评论的微博，需要多存一个0; 但是经过数据评估，我们发现这个优化还是相当必要的: a. key存储的空间比评论数还要长，一个8字节，一个4字节; b. 对于应用层来说，批量请求可以减少一次访问，能够降请求的压力，同时提升响应的时间; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(具体的数字不方便透露，但是这个结论大家可以随机抽取一批公开的微博来验证)&lt;/p&gt;
+
+&lt;h4&gt;3. 数据结构的优化&lt;/h4&gt;
+
+&lt;p&gt;通过方案二中Redis对内存使用的分析，我们发现是非常&quot;奢侈&quot;的, 大量的重复存储着指针和预留的字段，而且造成大量的碎片内存的使用， 当然Redis主要是出于通用性的考虑。&lt;/p&gt;
+
+&lt;p&gt;针对这种情况:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://weibo.com/n/%E6%9E%9C%E7%88%B8%E6%9E%9C%E7%88%B8&quot;&gt;@果爸果爸&lt;/a&gt; 同学设计了一个更轻量更简单的数据结构，能更好的利用内存，核心思路:&lt;/p&gt;
+
+&lt;p&gt;a.  通过下面的item结构来存储 转发和评论数:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;struct item {
+    int64_t weibo_id;
+    int repost_num;
+    int comment_num; 
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;存储数字，而不是字符串，没有多余的指针存储， 这样的话，两个数字只占 16个字节;&lt;/p&gt;
+
+&lt;p&gt;b.  程序启动的时候&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;开辟一大片的内存 (table_size * sizeof(item)) 并清0他。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;c.  插入时:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;h1 = hash1(weibo_id);
+h2 = hash2(weibo_id);
+
+如果 h1%table_size 是空的，则把item存储到这个位置上; 
+
+否则 s=1 并找 ( h1 + h2*s ) % table_size 的位置，
+
+如果还不空的话，s++继续找空位。。。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;d.  查询时:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;和插入的过程类似，找到一个数据后，比较weibo_id 和 item.weibo_id 是否一致，一致
+
+则表示查到，否则查到空的则表示为值为0;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;e. 删除时:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;查找到所在位置，设置特殊的标志; 下次插入时，可以填充这个标志位，以复用内存。。。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;经过我们实测，当2亿数据这种长度的数组中，容量不超过95%的时候，冲突率是可以接受的
+(最悲剧的时候可能需要做几百次的内存操作才能找到相应的空位, 性能上完全能够接受; )&lt;/p&gt;
+
+&lt;p&gt;经过这个优化之后，我们的总数据量变成了:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;400亿 * 16B = 640GB; 基本是方案二的 十分之一还少！ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;4  转发和评论数 Value的优化&lt;/h4&gt;
+
+&lt;p&gt;继续观察，我们发现大量的微博，虽然有转发和评论，但是值一般都比较小，几百或者几千的，
+超过几万的weibo很少(数据调研显示在十万分之一以下)。&lt;/p&gt;
+
+&lt;p&gt;所以我们把 item 升级为:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;struct item{
+    int64_t weibo_id;
+    unsigned short repost_num; 
+    unsigned short comment_num;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;对于转发数和评论数大于 65535 的weibo，我们在这里记录一个特殊的标志位FFFF，然后去
+另外的dict中去查找(那边不做这个优化)。事实上，还可以把 unsigned short优化为 int:12 之类的极端情况，但是更复杂，且收益一般，所以我们还是选用unsigned short。&lt;/p&gt;
+
+&lt;p&gt;经过这个优化后，我们的总数据量变成了:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;400亿 * 12B = 480GB, 这个数据量已经差不多是单机能够存储的容量了。 
+
+每秒的查询量由100W变成了50W, 更新量每秒只有数万没有变化，和查询量比可以先忽略。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; 4 .1 补充 Value的优化&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@吴廷彬: 另外，64bit value可以用utf-8的类似思想再压缩。最后因为cpu/mem不是瓶颈，可以将weibo_id和后面的value分开放在两个数组里面，对应的index一样即可。然后会发现value数组里面的64bit很多位全是0，或许可以考虑以K为单位的数据做简单数据压缩放入内存里面，这个压缩比应该是惊人的。
+
+@吴廷彬: 回复@cydu:value可以用二维数组怎么样。 如果1K为单位压缩则每一行表示1K个数据。然后对数据进行压缩写入。 一般可能每行只用100个字节？
+
+@cydu: 这样确实可以，变长编码会有意义，反正cpu应该不是瓶颈，有更新的时候整块重新编码，取也是全取出再解压。还一个好处是我加列更方便了，现在我加列的代价其实是很高的。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最早的时候，我也想过用变长压缩，但是思路一直局限在一个value里面做压缩，由于只有两列，我们又是用定长的存储，一方面变长有开销(标志位标志用了多少位来表示)，另一方面定长开给的32位省出来也没有合适的用处(可以和key的优化结合起来，用更少的字段)。  &lt;a href=&quot;http://weibo.com/n/%E5%90%B4%E5%BB%B7%E5%BD%AC&quot;&gt;@吴廷彬&lt;/a&gt; 一说二维数据，立马变长压缩的好处就显现出来了。&lt;/p&gt;
+
+&lt;p&gt;我可以把key单独存储，把value，按 1024个value甚至更多个value 压缩到一个mini block中存储，在定长的情况下，这个mini block的size是 1024*32 = 4K. 但是事实上，这4K中包含了大量的 0, 我不用自己整复杂的变长编码，直接拿这4K的数据做LZF压缩，只存储压缩后的数据就行了, 取的时候先解压缩。 具体的压缩效率得看数据才能定，但是根据一般文本的压缩到 50% 应该是非常轻松的，也就是说，至少可以节省 400亿 * 2 = 80GB的内存。&lt;/p&gt;
+
+&lt;p&gt;这个方案最大的一个好处还不在于这80GB的内存的节省，而是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. 我前面优化提到的 大于 65535 的转发和评论，我可以考虑简单做了，反正变长嘛，不影响，整个方案是简化了的。(当然需要具体的数据测试一下，验证哪个更好)
+
+2. [相当重要！！] 对于微博的计数，其实我们是有加列的需求的，比如其他的类似评论数的数字，我原来的方案中，加列的代价是相当高的，需要重开一个大数组，还要事先设好hint(对于新业务来说，hint值的不好选取，但是他对性能和内存的使用率影响又是致命的!)，而这个方案，无论你加多少列都其实没啥关系，用内存的长度只和你真实的数据量相关！ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;经过这个优化后，我保守的估计:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我们能够在之前的基础上，再节省 80GB的内存！ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;5. key的优化&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;@吴廷彬 很好的文章。weibo_id是8byte的，压缩能够压到接近4byte.假如一堆数据是AB,AC,AD,AE,AF, XE,XY,XZ.把他在内存里面A开头放在一坨内存，X开头放在另外一坨，里面只用存B,C,D,E,F和Y,Z. 基本上能减少4个字节。能省掉40G*4=160G？
+
+@drdrxp: 存储分成2^24个区,weibo_id%(2^24)指到区的号上,记录中再用40bit 存储weibo_id/(2^24),记录中另外12bit 存转发,12bit存评论, 1条记录总共8字节,480G可以优化到320G. 如果能实际考察下评论转发数的分布应该可以更加优化1些.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;感谢&lt;a href=&quot;http://weibo.com/n/%E5%90%B4%E5%BB%B7%E5%BD%AC&quot;&gt;@吴廷彬&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/drdrxp&quot;&gt;@drdrxp&lt;/a&gt; 提的这个建议，这一块的优化空间确实非常的大。后面其实有提到，我们会根据时间段或者根据weibo id把大的table 划分成多个小的table(主要是为了能够序列化到磁盘腾空间给更热的数据)。 所以在一个小table里面的数据都是weibo_id比较接近的，Eg: 5612814510546515491， 5612814510546515987， 我们可以把这64位key中相同的高32位归并起来。做为小table的属性(prefix)，就不必每一条都存储了。 8字节的key，至少能够节省 4字节。&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;struct item{ 
+    int weibo_id_low;
+    unsigned short repost_num;
+    unsigned short comment_num;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;经过这个优化后，我们的总数据量变成了:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;400亿 * 8B = 320GB， ^_^ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也感谢 &lt;a href=&quot;http://weibo.com/n/drdrxp&quot;&gt;@drdrxp&lt;/a&gt; 的建议，之前也考虑过12bit来存评论数和转发数，确实能够优化不少，但是由于多出来的bit不知道干嘛，就没搞了，呵呵。你的建议和 &lt;a href=&quot;http://weibo.com/n/%E5%90%B4%E5%BB%B7%E5%BD%AC&quot;&gt;@吴廷彬&lt;/a&gt; 提的建议都主要是在key上做文章，很赞！&lt;/p&gt;
+
+&lt;h4&gt;6. 批量查询&lt;/h4&gt;
+
+&lt;p&gt;对于Feed页来说，一次取到N条微博，然后查询他的计数，这里可以很好的批量化查询来优化响应时间。&lt;/p&gt;
+
+&lt;p&gt;以一次批量访问10个微博的计数来说，对于Counter碰到的压力就是:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;5W requests/second， 100W keys/second;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对于全内存的简单服务来说，单机已经基本能够扛 5W+ 的请求了。&lt;/p&gt;
+
+&lt;h4&gt;7. 冷热数据&lt;/h4&gt;
+
+&lt;p&gt;继续看这400亿个数字，我们发现，访问热点非常的集中，大量去年，甚至前年的weibo无人访问。
+本能的可能想到经典Cache的做法，热的数据在内存，冷的数据放磁盘。 但是如果引入lru的话，意味
+着我们的struct item得膨胀，会占用更多内存。而且对于0数据也得Cache。。。&lt;/p&gt;
+
+&lt;p&gt;对于这种情况，我们设计了一个非常简单的内存和磁盘淘汰策略，根据weiboid的区间（其实是时间）
+来进行淘汰，按区间划分，超过半年的dump到磁盘上去，半年内的继续留存在内存，当少量用户挖坟的时候
+(访问很老的微博并转发/评论)，我们去查询磁盘，并将查询的结果放到 Cold Cache当中.&lt;/p&gt;
+
+&lt;p&gt;为了方便把旧的数据dump到磁盘，我们把那个大的table_size拆成多个小的table，每个table都是不同的
+时间区间内的weibo计数，dump的时候，以小的table为单位。&lt;/p&gt;
+
+&lt;p&gt;为了提高磁盘的查询效率，dump之前先排序，并在内存中建好索引，索引建在Block上，而非key上。
+一个Block可以是4KB甚至更长，根据索引最多一次随机IO把这个Block取出来，内存中再查询完成;&lt;/p&gt;
+
+&lt;p&gt;经过这个优化:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我们可以把将近200G的数据放到磁盘当中, 剩余120GB的数据仍然留在内存当中。
+而且即使随着weibo数越来越多，我们也依然只要保存120GB的数据在内存中就行了，
+磁盘的数据量会增加，热点的数据也会变化，但是总的热点数据的量是变化很少的！ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;8. 数据的持久化&lt;/h4&gt;
+
+&lt;p&gt;对于Sorted 部分的数据:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;一旦刷到磁盘后，就只会读，不会修改，除非在做和Cold Block做merge的时候，才会重写 (目前这一块merge的逻辑没有实现，因为必要性不高)。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对于内存中的数据:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我们会定期把 Block 完整的dump到 磁盘中，形成 unsorted block。 然后每一次内存操作都会有相应的Append log， 一旦机器故障了，可以从 磁盘上的Block上加载，再追加Append log中的操作日志来恢复数据。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然，从整个架构上，一旦Counter崩溃等严重错误，导致数据错误，我们还可以:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;通过 具体数据的存储服务上把数据重新计算出来，恢复到Counter当中。 
+当然这种计数的代价是非常高的，你想想姚晨那么多粉丝，counter一遍很恐怖的， 我们也另外做了一些二级索引之类的简单优化。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;9. 一致性保证&lt;/h4&gt;
+
+&lt;p&gt;   @lihan_harry上边文章提到计数对正确性要求高，由于计数不满足幂等性。那么这个问题是怎么解决的&lt;/p&gt;
+
+&lt;p&gt;   @cydu回复 @lihan_harry ：是这样的，前面有一个消息队列，通过类似于transid的方案来做除重，避免多加和少加; 当然这里主要是指用主从的结构，incr累加，即使是最终一致也不至于太离谱; 另外，我们还有做实际的存储数据到Counter的定期数据校验，以后面的数据存储为准&lt;/p&gt;
+
+&lt;p&gt;   @郑环Zheng貌似还会有写请求单点问题，老数据的删除递减走硬盘，多机房冗余，机器假死宕机数据会不会丢失，删微博的时候还要清空相关计算不呢&lt;/p&gt;
+
+&lt;p&gt;   @cydu回复 @郑环Zheng ：是的，为了incr 的准确性，还是使用Master-Slave的结构，所以Master的单点问题依然存在，需要靠主从切换，以及事后的数据修复来提高数据的准确性。&lt;/p&gt;
+
+&lt;h4&gt;10. 分布式化&lt;/h4&gt;
+
+&lt;p&gt;出于稳定性的数据冗余的考虑，而且考虑到weibo现在数据增长的速度，在可预见的未来，数字会
+变成1500亿，2000亿甚至更高。&lt;/p&gt;
+
+&lt;p&gt;我们在上层还是做了一些简单的拆分的，&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;按照weiboid取模，划分到4套上(主要是考虑到后续数据的增长)，
+每套Master存储后面又挂2个Slave, 一方面是均摊读的压力，另一方面主要是容灾(当主挂掉的时候，还有副在，不影响读，也能够切换)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;so&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我还是没能单机扛住这1000亿个数字，和每秒100W次的查询。。。只好厚着脸皮问老大申请了十几台机器。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;优点:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;单机性能真的很好，内存利用率很高，对后续扩展的支持也相当不错。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;缺点:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我们码农泡妞的时间少了，得抽空写写代码。。。但是，如果不用写码的话，那码农还能干嘛呢？
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;总之:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;对于这种极端的情况，所以我们采用了同样极端的方式来优化，牺牲了部分的通用性。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;方案四: &lt;code&gt;Counter Service&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;方案三出来后, 微博计数的问题是解决了，但是我们还有用户关注粉丝计数呢，好友计数，会员计数...
+数字社会嘛，自然是很多数字，每一个数字背后都是一串串的故事。&lt;/p&gt;
+
+&lt;p&gt;针对这种情况，我们在Counter的基础上，再把这个模块服务化，对外提供一整套的 Counter Service，
+并支持动态的Schema修改(主要是增加)，这个服务的核心接口类似于下面这个样子:&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='c'&gt;//增加计数, 计数的名字是: &amp;quot;weibo&amp;quot; 
+add counter weibo                           
+
+// 向&amp;quot;weibo&amp;quot;这个计数器中增加一列，列名是 weibo_id, 最长为64位，一般也是64位，默认值为0, 而且这一列是key
+add column weibo weibo_id hint=64 max=64 default=0 primarykey 
+
+// 向&amp;quot;weibo&amp;quot;这个计数器中增加一列，列名是 comment_num, 最长为32位，一般是16位，默认值为0 
+add column weibo comment_num hint=16 max=32 default=0  suffix=cntcm     
+
+// 向&amp;quot;weibo&amp;quot;这个计数器中增加一列，列名是 repost_num, 最长为32位，一般是16位，默认值为0
+add column weibo repost_num hint=16 max=32 default=0  suffix=cntrn    
+
+// 向&amp;quot;weibo&amp;quot;这个计数器中增加一列，列名是 attitude_num, 最长为32位，一般是8位，默认值为0
+add column weibo attitude_num hint=8 max=32 default=0  suffix=cntan    
+
+.... 
+
+// 设置weibo计数中 weibo_id=1234 的相关计数，包括 comment_num, repost_num, attitude_num
+set weibo 1234 111 222 333
+
+// 获取weibo计数中 weibo_id=1234 的相关计数，包括 comment_num, repost_num, attitude_num
+get weibo 1234 
+
+// 获取weibo计数中 weibo_id=1234 的相关 comment_num
+get weibo 1234.cntcm
+
+// 增加weibo计数中 weibo_id=1234 的相关 comment_num
+incr weibo 1234.cntcm
+
+....&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;当 add column的时候，我们会根据hint值再增加一个大的table (table_size * sizeof(hint)),
+但是这里不存储key，只有value，用原来item那个大table的相同key。 对于超过部分依然是走
+另外的存储。&lt;/p&gt;
+
+&lt;p&gt;通过计数器服务化之后，最大的好处就是，后面我们再要加计数，有可能量没有那么大，可以很快的
+创建出来。。。&lt;/p&gt;
+
+&lt;p&gt;缺点:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;对于非数值类的key名，可能会退化到字符串的存储，我们可以通过简化的base64等机制来缩短空间;
+
+对于频繁修改老的数据，导致cold buffer膨胀的问题，可以通过定期的merge来缓解（类似于Leveldb的机制）;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;方案五: &lt;code&gt;你的方案&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;对于工程类的问题，其实永远不会有标准的答案，一千个架构师能给出一万个设计方案来，而且没有
+
+一个是标准的答案，只有最适合你的那一个！ 这里只简单分享一下我的一个思考过程和不同阶段最核心关注的点，欢迎大家一起讨论。  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;期待你的思路和方案！ 期待你们的简历， 请私信 &lt;a href=&quot;http://weibo.com/cydu&quot;&gt;@cydu&lt;/a&gt; 或者 &lt;a href=&quot;http://weibo.com/n/%E5%BE%AE%E5%8D%9A%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84&quot;&gt;@微博平台架构&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;当然，微博平台除了计数器这一个典型的小Case外，还有更多更大的挑战需要你的方案！&lt;/p&gt;
+
+&lt;!-- more end --&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>[微架构设计]微博计数器的设计(上)</title>
+        <link>http://blog.cydu.net//2012/08/weibo-counter-service-design-1.html</link>
+        <pubDate>Thu, 30 Aug 2012 00:00:00 +0800</pubDate>
+        <author>杜传赢 ChuanyingDu</author>
+        <guid>http://blog.cydu.net//2012/08/weibo-counter-service-design-1</guid>
+        <description>&lt;p&gt;正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。&lt;/p&gt;
+
+&lt;p&gt;入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！&lt;/p&gt;
+
+&lt;!-- more start --&gt;
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;闲话少说，上点干货.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;背景:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;每一条微博的转发和评论背后都是一串串说不完的故事，但是今天主要讲的是 **计数服务**，计数服务详尽地记录着每条微博 被评论的次数 和 被转发的次数，当然也还有更多的喜怒哀乐都记录于此。 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;数据量:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;微博总数量:  
+
+    千亿级 而且每秒都在飞速增长中。每条微博都有一个64位的唯一id。
+
+访问量:  
+
+    每秒百万级 还在稳步增长中。  根据微博的id来访问。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;主要接口:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;增加评论数 (默认为0)
+
+增加转发数 (默认为0)
+
+获取评论数
+
+获取转发数
+
+获取评论数 + 获取转发数  (这个接口访问量最大)
+
+评论数和转发数，你都可以认为是 32位的整形数值。不会是负数，默认是0。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;要求:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;由于用户对于数字非常的敏感(想想你好不容易拉到一位粉丝，但是粉丝数没涨的痛苦吧。)，所以我们要求数据非常准确，延迟极低(1s以内)，服务稳定性极高(千万别因为某大妈扫个地拨了插座就把数字弄没了...) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;做为架构师，当然也需要全方位地考虑架构成本问题，然后去做各种的折衷。 这里主要考虑的成本是: 机器成本，开发成本，维护成本。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;有兴趣的架构师和准架构师们可以一起思考，怎样才能用最少的机器，最短时间内开发出最易维护的计数器系统。。。当然，得满足我们数据量，性能和高可用的要求。&lt;/p&gt;
+
+&lt;p&gt;对这一块非常的感兴趣，而且有靠谱的想法和建议，烦请私信简历给 &lt;a href=&quot;http://www.weibo.com/n/cydu&quot;&gt;@cydu&lt;/a&gt; 或者 &lt;a href=&quot;http://weibo.com/n/%E5%BE%AE%E5%8D%9A%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84&quot;&gt;@微博平台架构&lt;/a&gt;，我们这里还有大量类似的问题期待着你来解决！   当然，也可以直接评论一起讨论。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;后面我会给出我们的理解和解决的思路，期待大家一起来优化。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!-- more end --&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>那些年我们一起写代码--杜传赢和各位说再见</title>
+        <link>http://blog.cydu.net//2012/07/say-goodbye-to-baidu.html</link>
+        <pubDate>Mon, 16 Jul 2012 00:00:00 +0800</pubDate>
+        <author>杜传赢 ChuanyingDu</author>
+        <guid>http://blog.cydu.net//2012/07/say-goodbye-to-baidu</guid>
+        <description>&lt;p&gt;Hi，各位亲爱的同事:&lt;/p&gt;
+
+&lt;p&gt;今天是我在百度工作的第1469天(别算了, 4年零8天, ^_&lt;sup&gt;)，也是最后一天。&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;正式向各位道别，并感谢各位老大, 同事的信任和帮助, 祝一切都好。
+宇宙很小，有空常联系，有缘多相会!&lt;/p&gt;
+
+&lt;p&gt;谢谢&lt;/p&gt;
+
+&lt;!-- more start --&gt;
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;weibo: &lt;a href=&quot;http://weibo.com/cydu&quot;&gt;weibo.com/cydu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;QQ:  172XXXX36&lt;/p&gt;
+
+&lt;p&gt;Baidu hi: hustdcy&lt;/p&gt;
+
+&lt;p&gt;Mail/Gtalk: hustdcy  at  gmail.com&lt;/p&gt;
+
+&lt;p&gt;MSN: hustdcy at hotmail.com&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;=============== 婆婆妈妈，啰啰嗦嗦的分隔线，有事的同学可忽略 ===========
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;看着950多位百度hi的联系人，和近10万封的工作邮件，一边回想这四年来的无数点点滴滴，
+突然变得非常伤感，就像当年从学校毕业送走同学, 再孤身一人来到北京一样的不舍。。。&lt;/p&gt;
+
+&lt;p&gt;这四年，是我人生中最值得留恋的四年，因为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;在这里，我认识了无数非常牛B却又真诚相待的老大和朋友; 
+
+在这里，我有幸参与并见证了百度基础平台/基础架构 萌芽，发展，再到壮大的完整过程; 
+
+在这里，我也见证了百度在云计算领域的长远规划和伟大决心;  
+
+在这里，我有机会学习，体会并实践着&quot;简单，可依赖&quot;的百度文化;
+
+在这里，我亲身尝试了RD，PM，OP，QA，FE，甚至是UE，售前，售后，客服的各个工种，学习到了各角色所不同的工作方式; 
+
+在这里，一个嫩得挤出水来的互联网新兵，变成了一个互联网&quot;老屌丝&quot;---真的已经很老了;  
+
+在这里，一个初出茅庐的单身穷小伙也逐步过上了&quot;老婆孩子热坑头&quot;的幸福生活。。。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;感谢&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;临别时刻，首先感谢国家感谢党，再感谢百度，感谢伟大的百度人民:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;非常感谢  &lt;a href=&quot;http://weibo.com/n/%E9%82%93%E8%B7%AFBD&quot;&gt;@邓路BD&lt;/a&gt;师兄 的强力推荐，以及 &lt;a href=&quot;http://weibo.com/n/%E5%BC%93%E9%95%BF%E7%BB%8D%E6%96%87&quot;&gt;@弓长绍文&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/%E9%A1%BE%E7%BB%B4%E7%81%8F&quot;&gt;@顾维灏&lt;/a&gt;放水，给我打开了一扇通往百度通往互联网的大门;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E7%8E%8B%E5%B2%B3w4sh&quot;&gt;@王岳w4sh&lt;/a&gt; 收留了我，并告诉我 &quot;做为一名工程师，你不止是Coder，更应该是问题的终结者！&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/randomtaste&quot;&gt;@randomtaste&lt;/a&gt; 做我的导师，教给了我非常多最基础的编码思想和设计原则，最忘不了你那句: &quot;追求完美的同时，要学会Trade off&quot;！，今后我一定努力做一个&quot;特别能吃饭，特别能战斗，特别能想辙，也特别能权衡，但是一般不凑合&quot;的非一般的青年(四个特一个不 =&gt; 特步), 少写没有营养的代码，同时多输出价值观。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/houzy&quot;&gt;@houzy&lt;/a&gt; 的照顾和帮助，多少次把我从危险的边缘拽了回来，又多少次恨铁不成钢地教育和提携我。 我依然谨记着老大&quot;这个Q我们主要目标是做好服务，Q3也是做好服务，Q4以及明年最重要的还是做好服务！&quot;的教诲。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E6%9E%97%E4%BB%95%E9%BC%8E&quot;&gt;@林仕鼎&lt;/a&gt; 教我不惧孤独，因为“走在前面的人，都是孤独的”。也是您让我明白除了&quot;pain-driven的哪疼医哪派设计外，还可以有data-driven派的理论化系统化地分析设计&quot;，今后我一定大力发挥RD的优势，不给您老丢人!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E7%8E%8B%E7%BB%A7%E5%B9%B3_%E7%99%BE%E5%BA%A6&quot;&gt;@王继平_百度&lt;/a&gt; 让我理解&quot;有问题不藏着不掖着，及早向上反馈&quot;的工作方式, 也非常佩服两个月勇减20斤的能力的毅力!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/bd%E4%B8%81%E6%96%87%E6%96%8C&quot;&gt;@bd丁文斌&lt;/a&gt;  对我工作的肯定和支持，让我理解 &quot;不要凡事都揽在手里，抓多了你就捏不过来了&quot; 的道理，一定要紧抓主要矛盾！&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/xrguo&quot;&gt;@xrguo&lt;/a&gt;  教我&quot;永远只专注做最重要的事情&quot;，&quot;要让同学们以用GM的产品为荣&quot;，同时我也深深地被&quot;我们在哪里，壁垒就在哪里&quot;的豪情所感染！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E8%82%96%E4%BC%9Fzju&quot;&gt;@肖伟zju&lt;/a&gt;  教给我的&quot;机会主义复用论&quot;, 很多东西你不想不做就没有了，你多想多做，没准哪天就成功了！也非常佩服他温州商人典型的精明和一切都能够定量衡量(主要是货币化)的智慧！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E5%8C%85%E8%83%BD%E8%BE%89&quot;&gt;@包能辉&lt;/a&gt;  带我走进科学，让我坚信&quot;任何Core和灵异事件背后都有一个真凶&quot;。非常欣赏他凡事都“不一定吧”的怀疑精神！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 晓鸣 的乐观，和伟大的Geek精神深深地感染我，忘不了你那句:&quot;求人不如求已，观音也要拜自己&quot;。我肯定会多攢RP(ResourcePool)的，因为有了RP，就有了一切，没有RP就啥也没有了。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E9%BD%90%E7%8E%89%E6%9D%B0domob&quot;&gt;@齐玉杰domob&lt;/a&gt;  &quot;把事情做到极致&quot; 的精神，现在我依然深受感染。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 王昊 做事的细心和大局意识，我后面也会 &quot;做事考虑周全，稳步推进，千万别按下葫芦起了瓢...&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Liubin老大 教给我的&quot;步步追问法&quot;,对于弄清事情的本质, 冷静系统地分析问题并解决 非常有帮助。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 ZhangJ老大 让我明白，&quot;性能都是调出来的&quot; 的道理，后面我再调参数之前，肯定也会继续拜张健的！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 ZhuCong老大 让我明白，&quot;温水煮青蛙&quot;的道理，推标准的时候一定一步一步的慢慢来，逐步推。总之，先上船，再收钱！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Huanghai老大 让我明白， &quot;流氓也要有耐心&quot;的道理，尤其是我们做乙方的时候。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/msmouse&quot;&gt;@msmouse&lt;/a&gt;  让我明白&quot;精细计算,提前规划&quot;的重要性，同时让我明白: Mola之所以靠谱纯粹是因为有靠谱的人在维护！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Liming 让我明白, &quot;没事不要随便Core&quot;，&quot;德国人真的也会不靠谱！&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E5%88%98PC&quot;&gt;@刘PC&lt;/a&gt;  教我如何表达自己的观点，如何展现自己。同时教我定期的Review, 不断的审视自己！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/CloudOps&quot;&gt;@CloudOps&lt;/a&gt;  告诉我&quot;不出去走走，你以为这就是世界&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Guowei 让我明白&quot;并非你有多强，而是你真的很幸运&quot;的道理！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/gulunmu&quot;&gt;@gulunmu&lt;/a&gt;  告诉我&quot;一次成功可能是幸运，二次成功才能证明你的实力&quot;的道理，也感谢他提高我艺术修养的巨大努力，虽然好像没怎么生效！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Duxi 勇敢的带领一个&quot;平均工龄只有两个月&quot;的全新团队挺过来了，并不断发展壮大。这种技术人员的韧劲让我感动。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E9%83%91%E4%BE%83-bd&quot;&gt;@郑侃-bd&lt;/a&gt; &lt;a href=&quot;http://weibo.com/n/idning&quot;&gt;@idning&lt;/a&gt;   。。。等诸多年轻一代的百度人让我深深地明白，少年也可以很有才，很给力！ 短短一年的学习就可以做到真正的独挡一面！&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/%E9%82%93%E8%B7%AFBD&quot;&gt;@邓路BD&lt;/a&gt;, YuJing, &lt;a href=&quot;http://weibo.com/n/%E8%BF%9E%E5%9F%8E404&quot;&gt;@连城404&lt;/a&gt; ，&lt;a href=&quot;http://weibo.com/n/xemoaya&quot;&gt;@xemoaya&lt;/a&gt; ，&lt;a href=&quot;http://weibo.com/n/%E5%AD%99%E9%B9%A4%E9%A3%9E&quot;&gt;@孙鹤飞&lt;/a&gt; ，&lt;a href=&quot;http://weibo.com/n/%E6%9D%8E%E8%B6%85_kucha&quot;&gt;@李超_kucha&lt;/a&gt; 等为代表的伟大用户们 的宽容与大度，是你们的支持和信任，成就了我们的今天; 你们的鞭策是我一直前进的动力; 能够和你们一起交流，一起合作是我最大的幸运。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 云存储,云环境,云服务等云计算和基础架构的同学们 对我的一路支持和帮助，以及你们对我的宽容与大度，虽然我经常在Code Review和设计评审的时候表现得很凶残，但其实我也很自责的，我只是想像老大们说的那样&quot;把服务做好&quot;,&quot;把事情做到极致&quot;！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/solaryf&quot;&gt;@solaryf&lt;/a&gt;, &lt;a href=&quot;http://weibo.com/n/YentownAngel&quot;&gt;@YentownAngel&lt;/a&gt; ，&lt;a href=&quot;http://weibo.com/n/nj927&quot;&gt;@nj927&lt;/a&gt; ，&lt;a href=&quot;http://weibo.com/n/Uniiiii&quot;&gt;@Uniiiii&lt;/a&gt; ，Zhangwen为代表的PM同学们, 和你们在一起的工作交流让我更加理解PM的专业工作，和数据驱动的工作方式，增进了更多的了解。并为之前因个别PM不专业而对整体PM产生的那一丝丝偏见感到羞愧。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Chenwei老大,&lt;a href=&quot;http://weibo.com/n/youngzk&quot;&gt;@youngzk&lt;/a&gt; ,Guowei,Xuanbiao,Mayu,tiantian为代表的众多QA同学 辛勤的工作，每每拖着你们赶进度，陪我们一起Case Study的时候，其实我心中也是非常非常不安，真心觉得对不起你们，但你们也不要太难过, 想想我在家跪搓衣板的情景，心中应该能舒畅不少 。。。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 Hecheng老大,&lt;a href=&quot;http://weibo.com/n/CloudOps&quot;&gt;@CloudOps&lt;/a&gt; ,Liujun,Yuansuai，Xianglong，Mingyong，&lt;a href=&quot;http://weibo.com/n/%E5%88%98%E5%AD%90%E5%85%AE&quot;&gt;@刘子兮&lt;/a&gt;  为代表的OP同学们的辛勤工作，每每半夜让你们处理报警，陪我们一起通宵上线的时候，其实我心中也是非常的不忍，我想我们后面肯定能够做得更好的。真心祝你们结婚的时候, 哄孩子睡觉的时候，上厕所挤地铁的时候，还有睡觉或者是出去旅游的时候，都永远不用收报警。。。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;公司的各位领导，虽然接触不多，但是他们的教诲我依然谨记心头，他们让我真的受益良多:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 &lt;a href=&quot;http://weibo.com/n/YentownAngel&quot;&gt;@YentownAngel&lt;/a&gt; 老大 鼓励我们&quot;Do more, talk more&quot;，勇于表达，群体共同激发灵活和创意。快速迭代, 敢于试错，但是一定要用数据说话！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 FanLi 老大  告诉我&quot;想清楚你要什么？然后再算清楚你会得到什么, 失去什么，是否值得再做决定&quot;的做事方法！&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 WangJ 老大 的肯定，&quot;百度的实习生很给力，虽然看着有点老！&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 梦秋老大 教我自信地发言可以&quot;铿锵有力，掷地有声&quot;，同时告诉我&quot;你穿的这件衬衫其实是女式的。。。&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 非常感谢 William 的十六字珍言&quot;想得仔细, 说得清楚, 写得精确, 做得有力&quot;. 同时我也经受住了他老人家的两大离职拷问&quot;走了你后不后悔？不走你会不会后悔？&quot;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;最后&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 非常感谢 Robin 缔造了 &quot;简单可依赖&quot; 的百度文化。无论是去逛街买菜还是出去技术交流我都敢穿着百度的工作服，因为我深深地爱着这个公司和他&quot;简单可依赖&quot;的文化，并为之感到自豪！&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;虽然说了很多感谢，但依然是挂一漏万。。。因为百度的同学们给我的帮助的鼓励实在是太多太多了。&lt;/p&gt;
+
+&lt;p&gt;能够在一毕业就进入百度，进入基础架构/云计算相关的部门工作并结识你们，是我这一生的幸运，正是这种幸运助我成长，但是我深知我还远未成熟。从今年3月份开始，我突然有着非常强烈的意识(很可能是被梦中植入的)，想要出去走一走，看一看，就像一个旅行家要出去旅行一样的冲动。从那之后，我逐步交出了云环境等相关项目，也和云存储的同学们一起挺过了最艰难的时刻。。。同时用William的终极拷问一遍一遍地问自己后不后悔，最终还是决定:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;百度虽好，但是我依然要出去闯闯! &quot;  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果硬要说百度的不好，那我想说的是:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;奎科食堂的饭菜难吃到了极点，能够非常稳定地做得这么难吃也算是技术功底非常不一般了！&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;PS:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;所有带 [@cydu](http://weibo.com/cydu) 字样注释的代码和模块，终身保修，维修热线 150XXXXX186 . 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;PS2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;烦请OP同学把我从报警列表中去掉，不泄漏公司机密的同时也可以给公司省点钱。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;PS3:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;我经常会带我儿子在百度大厦附近溜弯，如果你们周末加班的话，很可能会碰到我，^_^.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;谢谢&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://weibo.com/cydu&quot;&gt;Cydu&lt;/a&gt;  杜传赢&lt;/p&gt;
+
+&lt;p&gt;车床号: F1-AE162&lt;/p&gt;
+
+&lt;p&gt;服务热线: 26400&lt;/p&gt;
+
+&lt;p&gt;duchuanying@baidu.com&lt;/p&gt;
+
+&lt;p&gt;如对服务不满意,投诉热线: 25230&lt;/p&gt;
+
+&lt;!-- more end --&gt;
+
+</description>
+      </item>
+    
+  </channel>
+</rss>
+
+

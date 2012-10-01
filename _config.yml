@@ -1,0 +1,25 @@
+safe: true
+auto: true
+url: http://blog.cydu.net/
+
+pygments: false
+permalink: /:year/:month/:title.html
+paginate: 5
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+title : "Cydu's Blog"
+tagline: 'Keep it Simple & Stupid!'
+author :
+  name : 杜传赢 ChuanyingDu
+  short_name : Cydu
+  gtalk: hustdcy at gmail.com
+  weibo: http://weibo.com/cydu
+  github : https://github.com/cydu
+  twitter : http://twitter.com/cydu
+  linkedin: http://cn.linkedin.com/in/chuanying
+
+attachment_dir: /attachment/
+
+comments:
+    provider: false

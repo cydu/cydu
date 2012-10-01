@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Droid Serif", "Georgia", serif;
+    font-size: 11pt;
+    color: #333;
+    background: url('/static/background.png');
+}
+
+a {
+    text-decoration: none;
+    color: #6188f2;
+}
+
+a:hover {
+    color: #f29161;
+}
+
+#container {
+    width: 1000px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+#header {
+    padding-bottom: 20px;
+    border-bottom: 3px double #ccc;
+}
+
+#header h1 {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+#header h1 a {
+    text-decoration: none;
+    color: #42588c;
+}
+
+#header h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+div.post {
+    float: left;
+    width: 800px;
+    margin: 20px 0;
+}
+
+div.post h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+div.post h1 a {
+    color: #42588c;
+}
+
+div.post h2, h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div.post pre, div.post p {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+div.post p {
+    text-align: justify;
+}
+
+div.post span.hang {
+    font-family: "Lucida Unicode Sans", "Tahoma", sans-serif;
+    background-color: #42588c;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    font-size: 0.9em;
+}
+
+div.post p.meta {
+    font-style: italic;
+}
+
+div.post pre {
+    white-space: pre-wrap;
+}
+
+div.post code {
+    font-family: "Monaco", "Consolas", monospace;
+    font-size: 0.9em;
+}
+
+div.post p code, div.post pre {
+    padding: 0 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+div.post img {
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
+#post_neighbours {
+    padding: 20px 0;
+    margin: 20px 0;
+    height: 20px;
+    border-bottom: 3px double #ccc;
+    border-top: 3px double #ccc;
+}
+
+#post_neighbours div.left {
+    float: left;
+}
+
+#post_neighbours div.right {
+    float: right;
+}
+
+#disqus_thread {
+    clear: both;
+}
+
+#side {
+    float: right;
+    width: 160px;
+    margin: 20px 0;
+}
+
+#side h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+#side ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#side ul li {
+    line-height: 1.8em;
+}
+
+#pagination, #footer {
+    clear: both;
+    padding: 20px 0;
+    border-top: 3px double #ccc;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination ul {
+    list-style: none;
+}
+
+#pagination ul li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#pagination li.current-page {
+    background-color: #42588c;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#footer {
+    text-align: right;
+}
+
+#footer p {
+    line-height: 1.8em;
+}
+
+input.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.span12.search-query
+{
+    min-height: 25px;
+}
