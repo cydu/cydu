@@ -9,6 +9,7 @@ tags: 计数器 微架构设计 微博平台架构
 
 ## 更新
 
+<!-- not list start -->
     
 **Update:**
 
@@ -25,6 +26,8 @@ tags: 计数器 微架构设计 微博平台架构
 **Update4:** 
 
 *    更新Redis方案下内存使用的估算, 感谢 [@刘浩bupt](http://weibo.com/n/刘浩bupt) 的提醒。 
+
+<!-- not list end -->
 
 
 ## 背景

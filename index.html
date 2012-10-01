@@ -13,7 +13,7 @@ title: Home
     <a href="/tags.html#tag_{{ tag }}">{{ tag }}</a>{% if forloop.last%}.{% else %},{% endif %}
     {% endfor %}
     </p>
-    {{ post.content | replace:'more start -->','' | replace:'<!-- more end','' }}
+    {{ post.content | replace:'more start -->','' | replace:'<!-- more end','' | replace:'not list start -->','' | replace:'<!-- not list end','' }}
     <p class="meta"><a href="{{ post.url }}">More...</a></p>
 </div>
 {% endfor %}
