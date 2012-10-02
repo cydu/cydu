@@ -7,6 +7,14 @@ tags: weibo 价值观 cy分类法
 ---
 {% include JB/setup %}
 
+<!-- not list start -->
+
+{::options toc_levels="2..6" /}
+{:.no_toc}
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+<!-- not list end -->
+
 ## 背景
 
  @微博平台架构 今天搞了一个平台开放日假前的号外活动，类似于

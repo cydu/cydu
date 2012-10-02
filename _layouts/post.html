@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post">
-    <h1>{{ page.title }}</h1>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <span class="hang">{{ page.date | date_to_string }}</span>
     <p class="meta">
     Category: <a href="/categories.html#category_{{ page.category }}">{{ page.category }}</a>. Tags: 
