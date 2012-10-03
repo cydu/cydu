@@ -4,7 +4,7 @@
 
 body {
     font-family: "Droid Serif", "Georgia", serif;
-    font-size: 11pt;
+    font-size: 13pt;
     color: #333;
     background: url('/static/background.png');
 }
@@ -126,6 +126,10 @@ div.post p code, div.post pre {
     border-radius: 3px;
     border: 1px solid #ddd;
     background-color: #eee;
+    border-left: 12px solid #9cc811;
+    
+    padding: 12px 12px 12px 0;
+    padding-left: 13px;
 }
 
 div.post img {
@@ -155,8 +159,8 @@ div.post img {
 
 #side {
     float: right;
-    width: 180px;
-    margin: 20px 0;
+    width: 175px;
+    margin: 10px 0;
 }
 
 #side h1 {
@@ -224,4 +228,32 @@ input.search-query {
 .span12.search-query
 {
     min-height: 25px;
+}
+
+blockquote
+{
+    border-left: 12px solid #f29900;
+    background-color: #CCA;
+    padding: 12px 12px 12px 0;
+    margin-left: -48px;
+    padding-left: 48px;
+}
+
+strong 
+{
+    background-color: #EBCADA;
+    color: #D14;
+    padding: 3px 4px;
+    border: 1px solid #E1E1E8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    ::-webkit-input-placeholder {
+        color: #999;
+    }
+}
+
+.no_toc
+{
+    font-size: 1.0em;
 }

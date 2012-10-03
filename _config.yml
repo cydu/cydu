@@ -2,7 +2,7 @@ safe: true
 auto: true
 url: http://blog.cydu.net/
 
-pygments: false
+pygments: true
 permalink: /:year/:month/:title.html
 paginate: 5
 
