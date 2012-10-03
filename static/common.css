@@ -234,9 +234,14 @@ blockquote
 {
     border-left: 12px solid #f29900;
     background-color: #CCA;
-    padding: 12px 12px 12px 0;
-    margin-left: -48px;
-    padding-left: 48px;
+    padding: 2px 2px 2px 0;
+    padding-left: 24px;
+}
+
+div.post pre.language-c
+{
+    border-left: 12px solid #6458a2;
+    background-color: #EEF;
 }
 
 strong 
