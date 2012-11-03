@@ -4,7 +4,7 @@
   <title><![CDATA[Chuanying Du]]></title>
   <link href="http://cydu.github.com/cydu/atom.xml" rel="self"/>
   <link href="http://cydu.github.com/cydu/"/>
-  <updated>2012-11-03T13:38:57+08:00</updated>
+  <updated>2012-11-03T13:44:53+08:00</updated>
   <id>http://cydu.github.com/cydu/</id>
   <author>
     <name><![CDATA[cydu]]></name>
@@ -14,23 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[好的制度和坏的制度]]></title>
-    <link href="http://cydu.github.com/cydu/2012/11/03/good-system-and-bad-system/"/>
-    <updated>2012-11-03T13:21:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/11/03/good-system-and-bad-system</id>
-    <content type="html"><![CDATA[<p>最近前东家的事情比较多…
-前老板痛定思痛想要整改,推出了狼性:微博上各种老人也都在帮助献计献策</p>
-
-<!-- more start -->
-
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[[微扯蛋]工程师的价值和cy分类法]]></title>
-    <link href="http://cydu.github.com/cydu/2012/09/29/cy_values_classified/"/>
+    <link href="http://cydu.github.com/cydu/2012/09/cy_values_classified.html"/>
     <updated>2012-09-29T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/09/29/cy_values_classified</id>
+    <id>http://cydu.github.com/cydu/2012/09/cy_values_classified</id>
     <content type="html"><![CDATA[<!-- not list start -->
 
 <h1 id="section">背景</h1>
@@ -411,9 +398,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(下)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/09/09/weibo-counter-service-design-2/"/>
+    <link href="http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2.html"/>
     <updated>2012-09-09T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/09/09/weibo-counter-service-design-2</id>
+    <id>http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2</id>
     <content type="html"><![CDATA[<h2 id="section">更新</h2>
 
 <blockquote>
@@ -913,9 +900,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(上)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/08/30/weibo-counter-service-design-1/"/>
+    <link href="http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1.html"/>
     <updated>2012-08-30T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/08/30/weibo-counter-service-design-1</id>
+    <id>http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1</id>
     <content type="html"><![CDATA[<p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
 
 <p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>
@@ -997,9 +984,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[那些年我们一起写代码--杜传赢和各位说再见]]></title>
-    <link href="http://cydu.github.com/cydu/2012/07/16/say-goodbye-to-baidu/"/>
+    <link href="http://cydu.github.com/cydu/2012/07/say-goodbye-to-baidu.html"/>
     <updated>2012-07-16T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/07/16/say-goodbye-to-baidu</id>
+    <id>http://cydu.github.com/cydu/2012/07/say-goodbye-to-baidu</id>
     <content type="html"><![CDATA[<p>Hi，<strong>各位亲爱的同事</strong>: </p>
 
 <p>今天是我在百度工作的第<strong>1469</strong>天(别算了, 4年零8天, ^_^)，也是<strong>最后一天</strong>。</p>
