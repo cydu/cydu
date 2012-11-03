@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cydu | Chuanying Du]]></title>
-  <link href="http://blog.cydu.net//blog/categories/cydu/atom.xml" rel="self"/>
-  <link href="http://blog.cydu.net//"/>
-  <updated>2012-10-14T02:23:59+08:00</updated>
-  <id>http://blog.cydu.net//</id>
+  <link href="http://cydu.github.com/cydu/blog/categories/cydu/atom.xml" rel="self"/>
+  <link href="http://cydu.github.com/cydu/"/>
+  <updated>2012-11-03T13:38:57+08:00</updated>
+  <id>http://cydu.github.com/cydu/</id>
   <author>
     <name><![CDATA[cydu]]></name>
     <email><![CDATA[hustdcy@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[那些年我们一起写代码--杜传赢和各位说再见]]></title>
-    <link href="http://blog.cydu.net//2012/07/16/say-goodbye-to-baidu/"/>
+    <link href="http://cydu.github.com/cydu/2012/07/16/say-goodbye-to-baidu/"/>
     <updated>2012-07-16T00:00:00+08:00</updated>
-    <id>http://blog.cydu.net//2012/07/16/say-goodbye-to-baidu</id>
+    <id>http://cydu.github.com/cydu/2012/07/16/say-goodbye-to-baidu</id>
     <content type="html"><![CDATA[<p>Hi，<strong>各位亲爱的同事</strong>: </p>
 
 <p>今天是我在百度工作的第<strong>1469</strong>天(别算了, 4年零8天, ^_^)，也是<strong>最后一天</strong>。</p>

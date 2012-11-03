@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: weibo design | Chuanying Du]]></title>
-  <link href="http://blog.cydu.net//blog/categories/weibo-design/atom.xml" rel="self"/>
-  <link href="http://blog.cydu.net//"/>
-  <updated>2012-10-14T02:23:59+08:00</updated>
-  <id>http://blog.cydu.net//</id>
+  <link href="http://cydu.github.com/cydu/blog/categories/weibo-design/atom.xml" rel="self"/>
+  <link href="http://cydu.github.com/cydu/"/>
+  <updated>2012-11-03T13:38:57+08:00</updated>
+  <id>http://cydu.github.com/cydu/</id>
   <author>
     <name><![CDATA[cydu]]></name>
     <email><![CDATA[hustdcy@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(下)]]></title>
-    <link href="http://blog.cydu.net//2012/09/09/weibo-counter-service-design-2/"/>
+    <link href="http://cydu.github.com/cydu/2012/09/09/weibo-counter-service-design-2/"/>
     <updated>2012-09-09T00:00:00+08:00</updated>
-    <id>http://blog.cydu.net//2012/09/09/weibo-counter-service-design-2</id>
+    <id>http://cydu.github.com/cydu/2012/09/09/weibo-counter-service-design-2</id>
     <content type="html"><![CDATA[<h2 id="section">更新</h2>
 
 <blockquote>
@@ -517,9 +517,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(上)]]></title>
-    <link href="http://blog.cydu.net//2012/08/30/weibo-counter-service-design-1/"/>
+    <link href="http://cydu.github.com/cydu/2012/08/30/weibo-counter-service-design-1/"/>
     <updated>2012-08-30T00:00:00+08:00</updated>
-    <id>http://blog.cydu.net//2012/08/30/weibo-counter-service-design-1</id>
+    <id>http://cydu.github.com/cydu/2012/08/30/weibo-counter-service-design-1</id>
     <content type="html"><![CDATA[<p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
 
 <p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>

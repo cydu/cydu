@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>[微架构设计]微博计数器的设计(上) - Chuanying Du</title>
+  <title>好的制度和坏的制度 - Chuanying Du</title>
   <meta name="author" content="cydu">
 
   
-  <meta name="description" content="">
+  <meta name="description" content="最近前东家的事情比较多…
+前老板痛定思痛想要整改,推出了狼性:微博上各种老人也都在帮助献计献策 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cydu.github.com/cydu/2012/08/30/weibo-counter-service-design-1/">
+  <link rel="canonical" href="http://cydu.github.com/cydu/2012/11/03/good-system-and-bad-system/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -94,7 +95,7 @@
   
   <header>
     
-      <h1 class="entry-title">[微架构设计]微博计数器的设计(上)</h1>
+      <h1 class="entry-title">好的制度和坏的制度</h1>
     
     
       <p class="meta">
@@ -110,89 +111,18 @@
   
 
 
-<time datetime="2012-08-30T00:00:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2012</time>
+<time datetime="2012-11-03T13:21:00+08:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
-
-<p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>
+<div class="entry-content"><p>最近前东家的事情比较多…
+前老板痛定思痛想要整改,推出了狼性:微博上各种老人也都在帮助献计献策</p>
 
 <!-- more start -->
-<hr />
 
-<p>闲话少说，上点干货. </p>
-
-<ul class="no_toc" id="markdown-toc">
-  <li><a href="#section">背景</a></li>
-  <li><a href="#section-1">数据量</a>    <ul>
-      <li><a href="#section-2">微博总数量</a></li>
-      <li><a href="#section-3">访问量</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-4">主要接口</a></li>
-  <li><a href="#section-5">要求:</a></li>
-  <li><a href="#the-end">The End</a></li>
-</ul>
-
-<h2 id="section">背景</h2>
-
-<p>每一条微博的转发和评论背后都是一串串说不完的故事，但是今天主要讲的是 <strong>计数服务</strong>，计数服务详尽地记录着每条微博 被评论的次数 和 被转发的次数，当然也还有更多的喜怒哀乐都记录于此。 </p>
-
-<h2 id="section-1">数据量</h2>
-
-<h3 id="section-2">微博总数量</h3>
-
-<p><strong>千亿级</strong>而且每秒都在飞速增长中。每条微博都有一个64位的唯一id。</p>
-
-<h3 id="section-3">访问量</h3>
-
-<p><strong>每秒百万级</strong> 还在稳步增长中。根据微博的id来访问。</p>
-
-<h2 id="section-4">主要接口</h2>
-
-<ul>
-  <li>
-    <p>增加评论数 (默认为0)</p>
-  </li>
-  <li>
-    <p>增加转发数 (默认为0)</p>
-  </li>
-  <li>
-    <p>获取评论数</p>
-  </li>
-  <li>
-    <p>获取转发数</p>
-  </li>
-  <li>
-    <p>获取评论数 + 获取转发数  (这个接口访问量最大)</p>
-  </li>
-  <li>
-    <p>评论数和转发数，你都可以认为是<strong>32位的整形数值</strong>。不会是负数，默认是0。</p>
-  </li>
-</ul>
-
-<h2 id="section-5">要求:</h2>
-
-<p>由于用户对于数字非常的敏感(想想你好不容易拉到一位粉丝，但是粉丝数没涨的痛苦吧。)，所以我们要求数据非常准确，延迟极低(1s以内)，服务稳定性极高(千万别因为某大妈扫个地拨了插座就把数字弄没了…) </p>
-
-<p>做为架构师，当然也需要全方位地考虑架构成本问题，然后去做各种的折衷。 这里主要考虑的成本是: 机器成本，开发成本，维护成本。 </p>
-
-<h2 id="the-end">The End</h2>
-
-<p>有兴趣的架构师和准架构师们可以一起思考，怎样才能用<strong>最少的机器</strong>，<strong>最短时间</strong>内开发出<strong>最易维护</strong>的计数器系统。。。当然，得满足我们数据量，性能和高可用的要求。 </p>
-
-<p>对这一块非常的感兴趣，而且有靠谱的想法和建议，烦请私信<strong>简历</strong>给 <a href="http://www.weibo.com/n/cydu">@cydu</a> 或者 <a href="http://weibo.com/n/微博平台架构">@微博平台架构</a>，我们这里还有大量类似的问题期待着你来解决！   当然，也可以直接评论一起讨论。  </p>
-
-<p><strong>PS:</strong></p>
-
-<pre><code>后面我会给出我们的理解和解决的思路，期待大家一起来优化。
-</code></pre>
-
-<!-- more end -->
 </div>
 
 
@@ -215,12 +145,12 @@
   
 
 
-<time datetime="2012-08-30T00:00:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2012</time>
+<time datetime="2012-11-03T13:21:00+08:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/weibo-design/'>weibo design</a>
+    <a class='category' href='/blog/categories/制度/'>制度</a>
   
 </span>
 
@@ -231,10 +161,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left articlenav" href="/2012/07/16/say-goodbye-to-baidu/" title="Previous Post: 那些年我们一起写代码--杜传赢和各位说再见">&laquo; 那些年我们一起写代码--杜传赢和各位说再见</a>
+        <a class="basic-alignment left articlenav" href="/2012/09/29/cy_values_classified/" title="Previous Post: [微扯蛋]工程师的价值和cy分类法">&laquo; [微扯蛋]工程师的价值和cy分类法</a>
       
-      
-        <a class="basic-alignment right articlenav" href="/2012/09/09/weibo-counter-service-design-2/" title="Next Post: [微架构设计]微博计数器的设计(下)">[微架构设计]微博计数器的设计(下) &raquo;</a>
       
     </p>
   </footer>
