@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Chuanying Du</title>
+  <title>[微架构设计]微博计数器的设计(上) - Chuanying Du</title>
   <meta name="author" content="cydu">
 
   
-  <meta name="description" content=" 背景 @微博平台架构 今天搞了一个平台开放日假前的号外活动，类似于TED的自由主题演讲，大家都就自己感兴趣的话题做15-30分钟的演讲。 我临时凑热闹上去玩了玩，玩得非常开心! 平台开放日的其他几个主题演讲也都非常精彩，收益良多，后面一定要多搞这种活动！ ">
+  <meta name="description" content="">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.cydu.net//">
+  <link rel="canonical" href="http://blog.cydu.net//2012/08/30/weibo-counter-service-design-1/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -89,129 +89,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/2012/09/29/cy_values_classified/">[微扯蛋]工程师的价值和cy分类法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-29T00:00:00+08:00" pubdate data-updated="true">Sep 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><!-- not list start -->
-
-<h1 id="section">背景</h1>
-
-<!-- not list end -->
-
-<p><a href="http://weibo.com/n/微博平台架构">@微博平台架构</a> 今天搞了一个平台开放日假前的号外活动，类似于TED的自由主题演讲，大家都就自己感兴趣的话题做15-30分钟的演讲。</p>
-
-<p>我临时凑热闹上去玩了玩，玩得非常开心! 平台开放日的其他几个主题演讲也都非常精彩，收益良多，后面一定要多搞这种活动！</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2012/09/29/cy_values_classified/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2012/09/09/weibo-counter-service-design-2/">[微架构设计]微博计数器的设计(下)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-09T00:00:00+08:00" pubdate data-updated="true">Sep 9<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2 id="section">更新</h2>
-
-<blockquote>
-  <p><strong>Update</strong>:   更新了数据持久化和一致性保证相关的内容，多谢 <a href="http://weibo.com/n/lihan_harry">@lihan_harry</a> <a href="http://weibo.com/n/郑环Zheng">@郑环Zheng</a> <a href="http://weibo.com/n/51刘达">@51刘达</a> 等同学的提醒。 </p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Update2</strong>:   更新了 对于weibo_id key的优化，使用前缀压缩，可以节省近一半的空间。 感谢 <a href="http://weibo.com/n/吴廷彬">@吴廷彬</a> <a href="http://weibo.com/n/drdrxp">@drdrxp</a> 的建议！</p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Update3</strong>:   更新了 对于value 使用二维数组，多列进行压缩编码的优化思路， 再次感谢 <a href="http://weibo.com/n/吴廷彬">@吴廷彬</a> 的建议，</p>
-</blockquote>
-
-<blockquote>
-  <p><strong>Update4</strong>:   更新Redis方案下内存使用的估算, 感谢 <a href="http://weibo.com/n/刘浩bupt">@刘浩bupt</a> 的提醒。 </p>
-</blockquote>
-
-<h2 id="section-1">背景</h2>
-
-<!-- not list end -->
-
-<p>上周挖了一个坑 <a href="http://qing.weibo.com/1639780001/61bd0ea133002460.html">微架构设计 微博计数器的设计(上)</a>.</p>
-
-<p>虽然挖这个坑的动机是很不纯的(很明显的招聘软文, 非常欣慰的是确实收到了不少靠谱的简历, 希望简历来得更猛烈一些! ), 但是和大家讨论的过程中，还是收获很大的, 也认识了不少新朋友。 </p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2012/09/09/weibo-counter-service-design-2/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2012/08/30/weibo-counter-service-design-1/">[微架构设计]微博计数器的设计(上)</a></h1>
+      <h1 class="entry-title">[微架构设计]微博计数器的设计(上)</h1>
     
     
       <p class="meta">
@@ -234,31 +117,93 @@
   </header>
 
 
-  <div class="entry-content"><p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
+<div class="entry-content"><p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
 
 <p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>
 
+<!-- more start -->
+<hr />
+
+<p>闲话少说，上点干货. </p>
+
+<ul class="no_toc" id="markdown-toc">
+  <li><a href="#section">背景</a></li>
+  <li><a href="#section-1">数据量</a>    <ul>
+      <li><a href="#section-2">微博总数量</a></li>
+      <li><a href="#section-3">访问量</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-4">主要接口</a></li>
+  <li><a href="#section-5">要求:</a></li>
+  <li><a href="#the-end">The End</a></li>
+</ul>
+
+<h2 id="section">背景</h2>
+
+<p>每一条微博的转发和评论背后都是一串串说不完的故事，但是今天主要讲的是 <strong>计数服务</strong>，计数服务详尽地记录着每条微博 被评论的次数 和 被转发的次数，当然也还有更多的喜怒哀乐都记录于此。 </p>
+
+<h2 id="section-1">数据量</h2>
+
+<h3 id="section-2">微博总数量</h3>
+
+<p><strong>千亿级</strong>而且每秒都在飞速增长中。每条微博都有一个64位的唯一id。</p>
+
+<h3 id="section-3">访问量</h3>
+
+<p><strong>每秒百万级</strong> 还在稳步增长中。根据微博的id来访问。</p>
+
+<h2 id="section-4">主要接口</h2>
+
+<ul>
+  <li>
+    <p>增加评论数 (默认为0)</p>
+  </li>
+  <li>
+    <p>增加转发数 (默认为0)</p>
+  </li>
+  <li>
+    <p>获取评论数</p>
+  </li>
+  <li>
+    <p>获取转发数</p>
+  </li>
+  <li>
+    <p>获取评论数 + 获取转发数  (这个接口访问量最大)</p>
+  </li>
+  <li>
+    <p>评论数和转发数，你都可以认为是<strong>32位的整形数值</strong>。不会是负数，默认是0。</p>
+  </li>
+</ul>
+
+<h2 id="section-5">要求:</h2>
+
+<p>由于用户对于数字非常的敏感(想想你好不容易拉到一位粉丝，但是粉丝数没涨的痛苦吧。)，所以我们要求数据非常准确，延迟极低(1s以内)，服务稳定性极高(千万别因为某大妈扫个地拨了插座就把数字弄没了…) </p>
+
+<p>做为架构师，当然也需要全方位地考虑架构成本问题，然后去做各种的折衷。 这里主要考虑的成本是: 机器成本，开发成本，维护成本。 </p>
+
+<h2 id="the-end">The End</h2>
+
+<p>有兴趣的架构师和准架构师们可以一起思考，怎样才能用<strong>最少的机器</strong>，<strong>最短时间</strong>内开发出<strong>最易维护</strong>的计数器系统。。。当然，得满足我们数据量，性能和高可用的要求。 </p>
+
+<p>对这一块非常的感兴趣，而且有靠谱的想法和建议，烦请私信<strong>简历</strong>给 <a href="http://www.weibo.com/n/cydu">@cydu</a> 或者 <a href="http://weibo.com/n/微博平台架构">@微博平台架构</a>，我们这里还有大量类似的问题期待着你来解决！   当然，也可以直接评论一起讨论。  </p>
+
+<p><strong>PS:</strong></p>
+
+<pre><code>后面我会给出我们的理解和解决的思路，期待大家一起来优化。
+</code></pre>
+
+<!-- more end -->
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2012/08/30/weibo-counter-service-design-1/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/2012/07/16/say-goodbye-to-baidu/">那些年我们一起写代码&#8211;杜传赢和各位说再见</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">cydu</span></span>
+
+      
 
 
 
@@ -270,39 +215,54 @@
   
 
 
-<time datetime="2012-07-16T00:00:00+08:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time>
-        
-      </p>
+<time datetime="2012-08-30T00:00:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/weibo-design/'>weibo design</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      Liquid syntax error: Tag '{%' was not properly terminated with regexp: /\%\}/ 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/2012/07/16/say-goodbye-to-baidu/" title="Previous Post: 那些年我们一起写代码--杜传赢和各位说再见">&laquo; 那些年我们一起写代码--杜传赢和各位说再见</a>
+      
+      
+        <a class="basic-alignment right articlenav" href="/2012/09/09/weibo-counter-service-design-2/" title="Next Post: [微架构设计]微博计数器的设计(下)">[微架构设计]微博计数器的设计(下) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
+  <section>
+    <h1>Comments</h1>
+    <div id="weibo_thread" aria-live="polite">
 
-  <div class="entry-content"><p>Hi，<strong>各位亲爱的同事</strong>: </p>
-
-<p>今天是我在百度工作的第<strong>1469</strong>天(别算了, 4年零8天, ^_^)，也是<strong>最后一天</strong>。</p>
-
-<p>正式向各位道别，并感谢各位老大, 同事的信任和帮助, 祝一切都好。 
-宇宙很小，有空常联系，有缘多相会! </p>
-
-<p>谢谢<br />传赢</p>
+<script type="text/javascript">
+        (function(){
+         var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=auto&border=1&brandline=y&fontsize=14&ralateuid=1639780001&appkey=2210322454&dpc=1";
+         url = url.replace("url=auto", "url=" + document.URL); 
+         document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+         })();
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    window.WBComment.init({
+            "id": "WBCommentFrame"
+            });
+</script>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/2012/07/16/say-goodbye-to-baidu/">Read on &rarr;</a>
-    </footer>
-  
+  </section>
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     
@@ -331,7 +291,7 @@
       </li>
     
       <li class="post">
-        <a href="/2012/07/16/say-goodbye-to-baidu/">那些年我们一起写代码&#8211;杜传赢和各位说再见</a>
+        <a href="/2012/07/16/say-goodbye-to-baidu/">那些年我们一起写代码--杜传赢和各位说再见</a>
       </li>
     
   </ul>
@@ -340,7 +300,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/cydu">@cydu</a> on GitHub
@@ -370,7 +330,7 @@
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -389,6 +349,7 @@
 
   
 </aside>
+
 
     </div>
   </div>
