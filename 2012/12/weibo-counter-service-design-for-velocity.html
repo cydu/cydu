@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Chuanying Du</title>
+  <title>[微架构设计]微博计数器的设计 velocity - Chuanying Du</title>
   <meta name="author" content="cydu">
 
   
-  <meta name="description" content="Blog Archive 2012 [微架构设计]微博计数器的设计 velocity
-Dec 06 2012 posted in weibo design [微扯蛋]工程师的价值和cy分类法
-Sep 29 2012 posted in 微扯蛋 [微架构设计]微博计数器的设计(下)
-Sep 09 &hellip;">
+  <meta name="description" content="">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Sep 09 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cydu.github.com/cydu/blog/archives/index.html">
+  <link rel="canonical" href="http://cydu.github.com/cydu/2012/12/weibo-counter-service-design-for-velocity.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -93,92 +90,173 @@ Sep 09 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">[微架构设计]微博计数器的设计 Velocity</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-06T12:42:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
+
+
+<div class="entry-content"><p>非常感谢<a href="http://weibo.com/n/NinGoo">@NinGoo</a> 的邀请, 昨天在
+<a href="http://huati.weibo.com/k/velocity中国大会2012">#Velocity中国大会#</a> 上做了一个分享, 
+主要讲的内容还是微博计数器的设计思路, 但是侧重点方面和之前的Blog略有区别. </p>
+
+<p>Blog侧重更细节的一些优化和考量,因为大家可以有更多的时间
+和我来做资源计算的算术题. 技术交流的时候相对来说稍微宏观一些,
+随着产品的发展, 架构一路遇到了哪些挑战, 都是如何思考,如何解决的…</p>
+
+<p>会议当时的Keynote下载(相关的视频<a href="http://weibo.com/n/Velocity中国大会">@Velocity中国大会 </a>应该正在制作,稍后也会放出来): </p>
+
+<p><a href="http://vdisk.weibo.com/s/jUksI">Velocity分享_微架构设计之微博计数器服务_杜传赢_20121205.pdf</a></p>
+
+<p>PS:</p>
+
+<p>关于服务优化这一块, 我在会场表达的主要意见是: </p>
+
+<p>虽然我讲了很多优化的小技巧和思路, 但是并非鼓励大家去盲目优化. 
+除非他真的有必要. 我非常赞同”最好的优化就是不优化”, “优化是万恶之源”的观点.</p>
+
+<p>听过我讲的同学应该能够体会到, 我们一路走来都是尽可能地在延迟优化: </p>
+
+<ul>
+  <li>
+    <p>产品上线初期, 甚至不在Feed页中提供计数功能(有更加重要的功能待开发)</p>
+  </li>
+  <li>
+    <p>前期直接通过mysql搭建, 甚至使用更好的硬件(FusionIO)去支撑</p>
+  </li>
+  <li>
+    <p>虽然想到了value block和key prefix的压缩思路,但是线上还是没有实现(目前的优化已经基本够用)</p>
+  </li>
+</ul>
+
+<p>Marx描述共产主义的场景时说”共产主义社会中,物质极大丰富”, 这其实是一个极端悲剧的场景.</p>
+
+<p>因为能量只能按照一个方向转化,”物质极大丰富”的时候就意味着”能量被极大地消耗”. 
+我们追求的应该是能量的充裕,因为能量可以转化为物质, 反过来却不行.</p>
+
+<p><a href="http://blog.sina.com.cn/s/blog_4bac84290100qzrt.html">熵与能量守恒</a>这篇文章应该讲得更加清楚.</p>
+
+<p>类比到系统优化上, 也是一样的道理. </p>
+
+<p>我们追求的是能量的充裕(系统架构可优化的空间和能力).
+当我们有需求(产品需求, 访问量, 数据量倍增…)的时候, 可以将部分能量转化为物质
+(某一项优化的实话, 某一个模块的开发上线…)来满足需求. 如果在没有充分需求的情况下,
+就做了过多的优化, 那其实是对时间和能量的浪费, 而这些时间和能量本可以用到更加合适和
+更加紧迫的地方. </p>
+
+<p>“让系统保持无限的优化想象空间, 但先只实施当前最紧迫最必要的优化!”</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <div id="blog-archives">
+
+<span class="byline author vcard">Posted by <span class="fn">cydu</span></span>
+
+      
+
+
+
+
+
 
 
 
   
-  <h2>2012</h2>
 
-<article>
+
+<time datetime="2012-12-06T12:42:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2012</time>
+      
+
+<span class="categories">
   
-<h1><a href="/2012/12/weibo-counter-service-design-for-velocity.html">[微架构设计]微博计数器的设计 velocity</a></h1>
-<time datetime="2012-12-06T12:42:00+08:00" pubdate><span class='month'>Dec</span> <span class='day'>06</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/weibo-design/'>weibo design</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
+    <a class='category' href='/blog/categories/weibo-design/'>weibo design</a>
   
-<h1><a href="/2012/09/cy_values_classified.html">[微扯蛋]工程师的价值和cy分类法</a></h1>
-<time datetime="2012-09-29T00:00:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>29</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/微扯蛋/'>微扯蛋</a></span>
-</footer>
+</span>
 
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2012/09/weibo-counter-service-design-2.html">[微架构设计]微博计数器的设计(下)</a></h1>
-<time datetime="2012-09-09T00:00:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>09</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/weibo-design/'>weibo design</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2012/08/weibo-counter-service-design-1.html">[微架构设计]微博计数器的设计(上)</a></h1>
-<time datetime="2012-08-30T00:00:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>30</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/weibo-design/'>weibo design</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/2012/07/say-goodbye-to-baidu.html">那些年我们一起写代码&#8211;杜传赢和各位说再见</a></h1>
-<time datetime="2012-07-16T00:00:00+08:00" pubdate><span class='month'>Jul</span> <span class='day'>16</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/cydu/'>cydu</a></span>
-</footer>
-
-
-</article>
+    </p>
+    
+      <div class="sharing">
+  <!-- Baidu Button BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+        <a class="bds_tsina"></a>
+        <a class="bds_tqq"></a>
+        <a class="bds_baidu"></a>
+        <a class="bds_renren"></a>
+        <a class="bds_linkedin"></a>
+        <a class="bds_kaixin001"></a>
+        <a class="bds_qzone"></a>
+        <a class="bds_douban"></a>
+        <a class="bds_twi"></a>
+        <a class="bds_fbook"></a>
+        <a class="bds_mail"></a>
+        <a class="bds_print"></a>
+        <span class="bds_more">More</span>
+        <a class="shareCount"></a>
+    </div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=370743" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
 
 </div>
 
-  
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/2012/09/cy_values_classified.html" title="Previous Post: [微扯蛋]工程师的价值和cy分类法">&laquo; [微扯蛋]工程师的价值和cy分类法</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="weibo_thread" aria-live="polite">
+
+<script type="text/javascript">
+        (function(){
+         var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=auto&border=1&brandline=y&fontsize=14&ralateuid=1639780001&appkey=2210322454&dpc=1";
+         url = url.replace("url=auto", "url=" + document.URL); 
+         document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+         })();
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    window.WBComment.init({
+            "id": "WBCommentFrame"
+            });
+</script>
+
+</div>
+  </section>
 
 </div>
 
