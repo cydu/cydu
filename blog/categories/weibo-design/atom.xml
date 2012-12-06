@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: weibo design | Chuanying Du]]></title>
-  <link href="http://cydu.github.com/cydu/blog/categories/weibo-design/atom.xml" rel="self"/>
-  <link href="http://cydu.github.com/cydu/"/>
-  <updated>2012-12-06T20:26:11+08:00</updated>
-  <id>http://cydu.github.com/cydu/</id>
+  <link href="http://blog.cydu.net/blog/categories/weibo-design/atom.xml" rel="self"/>
+  <link href="http://blog.cydu.net/"/>
+  <updated>2012-12-06T20:38:28+08:00</updated>
+  <id>http://blog.cydu.net/</id>
   <author>
     <name><![CDATA[cydu]]></name>
     <email><![CDATA[hustdcy@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计 velocity]]></title>
-    <link href="http://cydu.github.com/cydu/2012/12/weibo-counter-service-design-for-velocity.html"/>
+    <link href="http://blog.cydu.net/2012/12/weibo-counter-service-design-for-velocity.html"/>
     <updated>2012-12-06T12:42:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/12/weibo-counter-service-design-for-velocity</id>
+    <id>http://blog.cydu.net/2012/12/weibo-counter-service-design-for-velocity</id>
     <content type="html"><![CDATA[<p>非常感谢<a href="http://weibo.com/n/NinGoo">@NinGoo</a> 的邀请, 昨天在
 <a href="http://huati.weibo.com/k/velocity中国大会2012">#Velocity中国大会#</a> 上做了一个分享, 
 主要讲的内容还是微博计数器的设计思路, 但是侧重点方面和之前的Blog略有区别. </p>
@@ -72,9 +72,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(下)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2.html"/>
+    <link href="http://blog.cydu.net/2012/09/weibo-counter-service-design-2.html"/>
     <updated>2012-09-09T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2</id>
+    <id>http://blog.cydu.net/2012/09/weibo-counter-service-design-2</id>
     <content type="html"><![CDATA[<h2 id="section">更新</h2>
 
 <blockquote>
@@ -574,9 +574,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(上)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1.html"/>
+    <link href="http://blog.cydu.net/2012/08/weibo-counter-service-design-1.html"/>
     <updated>2012-08-30T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1</id>
+    <id>http://blog.cydu.net/2012/08/weibo-counter-service-design-1</id>
     <content type="html"><![CDATA[<p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
 
 <p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>

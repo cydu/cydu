@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Chuanying Du]]></title>
-  <link href="http://cydu.github.com/cydu/atom.xml" rel="self"/>
-  <link href="http://cydu.github.com/cydu/"/>
-  <updated>2012-12-06T20:26:11+08:00</updated>
-  <id>http://cydu.github.com/cydu/</id>
+  <link href="http://blog.cydu.net/atom.xml" rel="self"/>
+  <link href="http://blog.cydu.net/"/>
+  <updated>2012-12-06T20:38:28+08:00</updated>
+  <id>http://blog.cydu.net/</id>
   <author>
     <name><![CDATA[cydu]]></name>
     <email><![CDATA[hustdcy@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计 velocity]]></title>
-    <link href="http://cydu.github.com/cydu/2012/12/weibo-counter-service-design-for-velocity.html"/>
+    <link href="http://blog.cydu.net/2012/12/weibo-counter-service-design-for-velocity.html"/>
     <updated>2012-12-06T12:42:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/12/weibo-counter-service-design-for-velocity</id>
+    <id>http://blog.cydu.net/2012/12/weibo-counter-service-design-for-velocity</id>
     <content type="html"><![CDATA[<p>非常感谢<a href="http://weibo.com/n/NinGoo">@NinGoo</a> 的邀请, 昨天在
 <a href="http://huati.weibo.com/k/velocity中国大会2012">#Velocity中国大会#</a> 上做了一个分享, 
 主要讲的内容还是微博计数器的设计思路, 但是侧重点方面和之前的Blog略有区别. </p>
@@ -72,9 +72,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微扯蛋]工程师的价值和cy分类法]]></title>
-    <link href="http://cydu.github.com/cydu/2012/09/cy_values_classified.html"/>
+    <link href="http://blog.cydu.net/2012/09/cy_values_classified.html"/>
     <updated>2012-09-29T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/09/cy_values_classified</id>
+    <id>http://blog.cydu.net/2012/09/cy_values_classified</id>
     <content type="html"><![CDATA[<!-- not list start -->
 
 <h1 id="section">背景</h1>
@@ -116,7 +116,7 @@
 <p>即使是最低级的程序员你也完全没有办法根据他完成的代码数来评估他的工作量。 
 工程师的价值更加的难以评估，就像:   用一杆称白菜的小称来称大飞机的重量以确定这架飞机的价值!</p>
 
-<p><img src="http://cydu.github.com/cydu/images/values_1.png" alt="cydu" /></p>
+<p><img src="http://blog.cydu.net/images/values_1.png" alt="cydu" /></p>
 
 <p>PS: 现场有坏人说学曹冲称象，把大飞机拆碎了称。。。</p>
 
@@ -274,7 +274,7 @@
 
 <h2 id="section-8">019</h2>
 
-<p><img src="http://cydu.github.com/cydu/images/values_019.png" alt="cydu" /></p>
+<p><img src="http://blog.cydu.net/images/values_019.png" alt="cydu" /></p>
 
 <p>即 几乎不输出价值观，偶尔输出智慧，大部分时间在输出技能！ </p>
 
@@ -335,7 +335,7 @@
 
 <h2 id="section-10">235</h2>
 
-<p><img src="http://cydu.github.com/cydu/images/values_235.png" alt="cydu" /></p>
+<p><img src="http://blog.cydu.net/images/values_235.png" alt="cydu" /></p>
 
 <p>典型人群: </p>
 
@@ -455,9 +455,9 @@
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(下)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2.html"/>
+    <link href="http://blog.cydu.net/2012/09/weibo-counter-service-design-2.html"/>
     <updated>2012-09-09T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/09/weibo-counter-service-design-2</id>
+    <id>http://blog.cydu.net/2012/09/weibo-counter-service-design-2</id>
     <content type="html"><![CDATA[<h2 id="section">更新</h2>
 
 <blockquote>
@@ -957,9 +957,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[[微架构设计]微博计数器的设计(上)]]></title>
-    <link href="http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1.html"/>
+    <link href="http://blog.cydu.net/2012/08/weibo-counter-service-design-1.html"/>
     <updated>2012-08-30T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/08/weibo-counter-service-design-1</id>
+    <id>http://blog.cydu.net/2012/08/weibo-counter-service-design-1</id>
     <content type="html"><![CDATA[<p>正式入职新浪微博一个月了，一切安好，各位勿念。 也多谢各位猎头抬爱，但是请不要再骚扰了，近期完全没有找工作的兴趣。 </p>
 
 <p>入职这一个月，虽然大多时间是在熟悉架构的一些细节，但是也深深地感受到了weibo平台巨大的流量和社会影响力(对于服务稳定性提出了近乎苛刻的要求)带给架构师们的巨大挑战和压力，当然这也是几乎每一位架构师都梦寐以求的机会！  </p>
@@ -1041,9 +1041,9 @@ incr weibo 1234.cntcm
   
   <entry>
     <title type="html"><![CDATA[那些年我们一起写代码--杜传赢和各位说再见]]></title>
-    <link href="http://cydu.github.com/cydu/2012/07/say-goodbye-to-baidu.html"/>
+    <link href="http://blog.cydu.net/2012/07/say-goodbye-to-baidu.html"/>
     <updated>2012-07-16T00:00:00+08:00</updated>
-    <id>http://cydu.github.com/cydu/2012/07/say-goodbye-to-baidu</id>
+    <id>http://blog.cydu.net/2012/07/say-goodbye-to-baidu</id>
     <content type="html"><![CDATA[<p>Hi，<strong>各位亲爱的同事</strong>: </p>
 
 <p>今天是我在百度工作的第<strong>1469</strong>天(别算了, 4年零8天, ^_^)，也是<strong>最后一天</strong>。</p>
